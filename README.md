@@ -3,4 +3,4 @@ Robot Operating System written in Python 2 / Learning tool Saint Martin Universi
 
 # Requirements:
 
-The text assumes the use of ROS Melodic Morenia and Ubuntu 18.04.4 LTS (Bionic Beaver). Instructions for installing this development environment are included in the text.
+ROS Melodic Morenia, Ubuntu 18.04.4 LTS (Bionic Beaver) and Python 2
