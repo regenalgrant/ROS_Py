@@ -6,15 +6,13 @@ import sys
 
 rospy.init_node('service_client')
 
-""" Registration """
+""" Registration / service broadcasted """
 rospy.wait_for_service('word_count') 
 
-"""Creating proxy """
-word_counter = rospy.ServiceProxy( 
+"""Creating proxy, once service is broadcast / Service Name/ Service Type """
+word_counter = rospy.ServiceProxy('word_count', WordCount)
 
-# Service Name
-	'word_count', 
 
-# Service Type
-  WordCount     
-)
+""" Service call """
+word_count = word_counter(words)
+
